@@ -1,93 +1,91 @@
-	.modal {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-			background-color: rgba(0,0,0,0.4);
-		}
-
-		.modal-content {
-			background-color: #;
-			margin: 10% auto;
-			padding: 20px;
-			border: 0px solid #888;
-			width: 80%;
-		}
-
-		.close {
-			color: yellow;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
-
-		.close:hover,
-		.close:focus {
-			color: black;
-			text-decoration: none;
-			cursor: pointer;
-		}
-	.btn2 {
-      background-color: red;
-      border: none;
-      color: white;
-      padding: 10px 24px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #555555;
-      color: white;
-    }
-
-    .btn:active {
-      background-color: #FFA500;
-      transform: translateY(2px);
-    }
-	
-		@keyframes buttonAnim {
-			0% {
-				transform: scale(1);
-			}
-			50% {
-				transform: scale(1.2);
-			}
-			100% {
-				transform: scale(1);
-			}
-		}
-		
-		button {
-			background-color: blue;
-			border: none;
-			color: yellow;
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 12px;
-			margin: 4px 2px;
-			cursor: pointer;
-			animation-duration: 0.5s;
-			animation-name: buttonAnim;
-		}
-		
 	
       .fill video {
         object-fit: fill;
       }
-      .fit video{
+      .fit video {
         object-fit: contain;
       }
+    
+     .zoomIn video {
+        object-fit: none;
+      }
+      
+      
+     .zoomOut video {
+        object-fit: cover;
+      }
+    
+    
+
+
+.fullscreen-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Fullscreen mode */
+.video:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+.video:-moz-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+.video:-ms-fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+.video:fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide fullscreen button in fullscreen mode */
+.video:-webkit-full-screen ~ .fullscreen-button,
+.video:-moz-full-screen ~ .fullscreen-button,
+.video:-ms-fullscreen ~ .fullscreen-button,
+.video:fullscreen ~ .fullscreen-button {
+  display: none;
+}
+
+.btn0 {
+  border: true ;
+  border-radius: 10px;
+  border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: blue;
+  border-left-color: blue;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.btn1 {
+  color: white;
+  font-size: 9px;
+}
+
+
+
+.btn2 {
+  background-image: linear-gradient(to bottom right, black, blue, yellow );
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  font-size: 9px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.btn2:hover {
+  background-image: linear-gradient(to bottom right, black, blue, red);
+}
+
+
     
     
